@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sell.iml" filepath="$PROJECT_DIR$/sell.iml" />
       <module fileurl="file://$PROJECT_DIR$/sell-product/sell-product.iml" filepath="$PROJECT_DIR$/sell-product/sell-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-register-center/service-register-center.iml" filepath="$PROJECT_DIR$/service-register-center/service-register-center.iml" />
     </modules>
   </component>
 </project>

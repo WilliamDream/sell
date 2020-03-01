@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sell-product" />
+        <module name="service-register-center" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eureka-server" target="1.8" />
       <module name="sell" target="1.7" />
-      <module name="sell-product" target="1.7" />
+      <module name="sell-product" target="1.8" />
+      <module name="service-register-center" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

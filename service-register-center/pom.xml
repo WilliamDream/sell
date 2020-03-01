@@ -10,9 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.william.sell</groupId>
-    <artifactId>sell-product</artifactId>
+    <artifactId>service-register-center</artifactId>
 
-    <name>sell-product</name>
+    <name>service-register-center</name>
+    <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
     <properties>
@@ -22,6 +23,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -29,49 +35,10 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper-spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mybatis.generator</groupId>
-            <artifactId>mybatis-generator-core</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <version>2.0.8.RELEASE</version>
         </dependency>
     </dependencies>
 
@@ -116,24 +83,6 @@
                 <plugin>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.mybatis.generator</groupId>
-                    <artifactId>mybatis-generator-maven-plugin</artifactId>
-                    <version>1.3.2</version>
-                    <configuration>
-                        <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
-                        <overwrite>true</overwrite>
-                        <verbose>true</verbose>
-                    </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.mybatis.generator</groupId>
-                            <artifactId>mybatis-generator-core</artifactId>
-                            <version>1.3.2</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
