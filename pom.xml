@@ -18,7 +18,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
-        <spring-boot-start.version>2.0.8.RELEASE</spring-boot-start.version>
+        <spring-boot-start.version>2.2.11.RELEASE</spring-boot-start.version>
         <spring-boot-data-jpa.version>2.1.5.RELEASE</spring-boot-data-jpa.version>
         <springframework.version>5.2.1.RELEASE</springframework.version>
         <junit.version>4.11</junit.version>
